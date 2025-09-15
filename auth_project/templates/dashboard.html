@@ -3,7 +3,6 @@
 {% block title %}Dashboard{% endblock %}
 
 {% block content %}
-<h2>Welcome to your Dashboard, {{ user.username }}!</h2>
-<p>You are successfully logged in.</p>
-<p><a href="{% url 'logout' %}" class="btn btn-danger">Logout</a></p>
+<h2>Welcome, {{ user.username }}!</h2>
+<p>This is your dashboard. Only logged-in users can see this.</p>
 {% endblock %}
