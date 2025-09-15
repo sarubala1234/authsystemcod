@@ -1,0 +1,203 @@
+/* General body styling */
+body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px; /* Increased font size */
+}
+
+/* Navbar styling */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-size: 18px;
+}
+
+.navbar:hover {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    transform: translateY(-2px);
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #ffd700 !important;
+}
+
+.nav-link {
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #ffd700 !important;
+    transform: scale(1.1);
+}
+
+/* Container for main content */
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Headings */
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: slideIn 0.6s ease forwards;
+}
+
+/* Form styling */
+form {
+    margin-top: 20px;
+    animation: fadeIn 1s ease forwards;
+}
+
+form label {
+    font-weight: 600;
+    color: #e0e0e0;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease, background 0.3s ease, transform 0.2s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 0 12px #6a11cb;
+    border-color: #6a11cb;
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+}
+
+form button {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(106, 17, 203, 0.6);
+    animation: pulse 2s infinite;
+}
+
+form button:hover {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(37, 117, 252, 0.8);
+}
+
+/* Alert messages */
+.alert {
+    margin-top: 15px;
+    animation: fadeIn 0.5s ease forwards;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    color: #d1d5db;
+    font-size: 14px;
+}
+
+/* Links */
+a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 4px 15px rgba(106, 17, 203, 0.6);
+    }
+    50% {
+        box-shadow: 0 4px 20px rgba(106, 17, 203, 0.9);
+    }
+    100% {
+        box-shadow: 0 4px 15px rgba(106, 17, 203, 0.6);
+    }
+}
