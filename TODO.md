@@ -34,7 +34,20 @@
 - [x] Test registration, login, logout, and protected routes
 - [x] Verify security features (password hashing, session management)
 
-## 8. Optional Enhancements (Future)
+## 8. Deployment to Render
+- [x] Create requirements.txt with dependencies
+- [x] Update settings.py for production (env vars, PostgreSQL, whitenoise)
+- [x] Create Procfile for gunicorn
+- [x] Update .gitignore (already done)
+- [ ] Push code to GitHub
+- [ ] Create Render account and new Web Service
+- [ ] Connect GitHub repo
+- [ ] Add PostgreSQL database on Render
+- [ ] Set environment variables: DJANGO_SECRET_KEY, DEBUG=False, ALLOWED_HOSTS=your-render-url.onrender.com, DATABASE_URL=postgres-url
+- [ ] Deploy and run migrations
+- [ ] Test the live app
+
+## 9. Optional Enhancements (Future)
 - [ ] Email verification
 - [ ] Password reset
 - [ ] User roles/permissions
